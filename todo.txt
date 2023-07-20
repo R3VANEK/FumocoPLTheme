@@ -1,0 +1,14 @@
+TODO Janka: 
+    cookies (dokończyć konfiguracje z pajacami z KIKU)
+
+
+
+TODO Łukasza:
+
+    strzałki w nawigacji na mobilkach się dziwnie zachowują po kliknięciu
+    ostylowanie kart programów (wszędzie)
+    ostylowanie kart artykułów w archiwach ✓(prawie done)
+
+
+   
+    
