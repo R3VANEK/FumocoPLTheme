@@ -3,6 +3,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
+const CssUrlRelativePlugin = require('css-url-relative-plugin')
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -17,6 +18,7 @@ const config = {
     path: path.resolve(__dirname, "src"),
   },
   plugins: [
+    new CssUrlRelativePlugin(/* options */)
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
@@ -46,7 +48,11 @@ const config = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
+    alias: {
+      linearicons: path.resolve(__dirname, 'fonts/')
+    }
   },
+  
 };
 
 module.exports = () => {

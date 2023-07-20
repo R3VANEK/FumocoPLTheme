@@ -1,75 +1,44 @@
 <?php
     get_header();
 ?>
- 
-
-<main id="index-main">
 
 
 
-
-    <div class="title-holder">
-        <span class="page-title"><?php echo get_the_title();?></span>
-    </div>
-
-
-
-    <section id="articles-holder">
+<div class="full-page">
     
+    <nav class="top-nav flex-row flex-between w-100">
+        <img class="top-nav__logo" src="<?php echo get_template_directory_uri(); ?>/src/images/logo-green.png" alt="fumoco logo" width="400">
 
-    <?php
-       echo do_shortcode("[postx_template id='20']");
-    ?>
+        <ul role="list" class="top-nav__list flow-row color-black">
+            <a href="#"><li class="top-nav__li green-underline">O nas</li></a>
+            <a href="#"><li class="top-nav__li green-underline">Oferta</li></a>
+            <a href="#"><li class="top-nav__li green-underline">Praca</li></a>
+            <a href="#"><li class="top-nav__li green-underline">Kontakt</li></a>
+        </ul>
+    </nav>
 
-    <?php
+    <section class="hero-section flex-row w-100">
 
-        // if( have_posts()){
+        <div class="hero-section__left-block flex-col p-4 w-50 bg-green">
+            <span class="hero-section__note">Outsourcing company</span>
+            <h1>Fumoco</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima officiis tenetur similique alias sed sequi laborum, eligendi fuga repellat eum inventore deleniti atque exercitationem odit quos adipisci perferendis. Reiciendis, aspernatur?</p>
+            <button class="button">Zobacz więcej</button>
+        </div>
 
-        //     while(have_posts()){
-        //         the_post();
-        //         the_content();
-                
-        //     }
-        // }
+        <div class="hero-section__block flex-row flex-center w-50 ">
+            <img class="hero-section__img" src="<?php echo get_template_directory_uri(); ?>/src/images/fumoco-gif.svg" alt="fumoco gif animation">
+        </div>
 
-        // <Link to={`/artykul/${articleCard.id}#article-meta`} className="article-details-link">
-        //         <article style={{backgroundImage : `url(http://www.torun.kik.opoka.org.pl/Projekt_strony2020/img/articleMain/${articleCard.banner})`}}>
-        //             <div className="card-hover-holder">
-        //                 <p className="card-hover-title">{articleCard.title}</p>
-        //                 <p className="card-hover-description">{articleCard.short_description}</p>
-        //             </div>
-        //         </article>
-        //     </Link> 
-
-        // $posts = $wpdb->get_results("SELECT * FROM wp_posts WHERE wp_posts.post_type = 'wp_articles' and wp_posts.post_title <> 'Automatycznie zapisany szkic' order by post_modified desc");
-        // // print_r($posts);
-        // foreach($posts as $article){
-
-
-        //    $image_url = get_the_post_thumbnail_url($article->ID);
-        //    $short_description = wp_strip_all_tags(substr($article->post_content, 0, 47) . '...');
-        //     echo "
-        //         <a href='$article->post_name' class='article-details-link'>
-        //             <article style='background-image: url($image_url)'>
-        //                 <div class='card-hover-holder'>
-        //                     <p class='card-hover-title'>$article->post_title</p>
-        //                     <p className='card-hover-description'>$short_description</p>
-        //                 </div>
-        //             </article>
-        //         </a>
-                
-        //     ";
-        // }
-    
-    ?>
     </section>
 
-<!-- <?php echo do_shortcode("[post_grid id='42']"); ?> -->
+</div>
+ 
 
 
-</main>
+<section class="about-section">
 
-
+</section>
 
 
 <?php
