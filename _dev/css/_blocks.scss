@@ -180,6 +180,19 @@
 
 
     }
+    .offer-section{
+        flex-direction: column-reverse !important;
+    }
+    div.offer-section__left-h{
+        width: 100% !important;
+        img{
+            min-width: 250px;
+            max-width: 70%;
+        }
+    } 
+    .offer-section__right-h{
+        padding:2em !important;
+    }
     
 }
 
@@ -229,6 +242,24 @@
 .about-section__long-text{
     font-size:2rem;
     margin-top:2em;
+}
+.offer-section__left-h img{
+    min-width:500px;
+}
+.offer-section__right-h {
+    align-items: flex-end !important;
+    justify-content: flex-start;
+    padding-right:3em;
+
+    h3{
+        font-size:6rem;
+    }
+    p{
+        width:70%;
+        margin-top:2em;
+        font-size:1.5rem;
+    }
+    
 }
 
 .main-footer__left-h{

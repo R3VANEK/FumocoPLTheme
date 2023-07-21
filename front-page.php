@@ -72,9 +72,31 @@
     </div>
 
     <p class="about-section__long-text text-align-center p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis illo ipsum sit blanditiis modi est error ad ratione, inventore maxime ullam. Eligendi excepturi nesciunt impedit ipsum reiciendis, quod laboriosam?</p>
-
-    
 </section>
+
+
+<section class="offer-section flex-row bg-green">
+    <div class="offer-section__left-h flex-row flex-center w-50">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/connections.png" alt="fumoco connections" width="650">
+    </div>
+
+    <div class="offer-section__right-h flex-col text-align-right p-6 color-all-white">
+        <h3>Oferta</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum magni repellendus sequi ipsam? Hic quas enim illo. Numquam et corrupti, perferendis dolore possimus doloremque eius iusto, enim, aspernatur officiis culpa!</p>
+    </div>
+</section>
+
+<!-- <section class="work-section flex-col w-100">
+    <h2>Praca</h2>
+
+    <div class="work-section__card-h">
+        <div class="work-card flex-col flex-center p-3">
+            <h4>Monter zabudowy</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, sed cum. Soluta corporis non exercitationem voluptatibus voluptate et est sint odio in. Error consequatur doloremque at ipsam deserunt nam illo?</p>
+            <button class="button">Wyślij CV</button>
+        </div>
+    </div>
+</section> -->
 
 
 <?php
