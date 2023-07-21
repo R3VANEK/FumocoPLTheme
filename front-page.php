@@ -14,10 +14,10 @@
     <img class="top-nav__logo" src="<?php echo get_template_directory_uri(); ?>/src/images/logo-green.png" alt="fumoco logo" width="400">
 
     <ul role="list" id="main-nav" class="top-nav__list flex-row color-black" aria-expanded="false">
-        <a href="#"><li class="top-nav__li green-underline">O nas</li></a>
-        <a href="#"><li class="top-nav__li green-underline">Oferta</li></a>
-        <a href="#"><li class="top-nav__li green-underline">Praca</li></a>
-        <a href="#"><li class="top-nav__li green-underline">Kontakt</li></a>
+        <a href="#"><li class="top-nav__li green-underline underline-hover">O nas</li></a>
+        <a href="#"><li class="top-nav__li green-underline underline-hover">Oferta</li></a>
+        <a href="#"><li class="top-nav__li green-underline underline-hover">Praca</li></a>
+        <a href="#"><li class="top-nav__li green-underline underline-hover">Kontakt</li></a>
     </ul>
 </nav>
 
