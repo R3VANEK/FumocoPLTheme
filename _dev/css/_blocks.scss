@@ -65,7 +65,7 @@
 
     .top-nav__switcher{
         display: block;
-        position: fixed;
+        position: absolute;
         top:3rem;
         right:2rem;
         z-index:99;
@@ -112,5 +112,42 @@
         align-self: center;
     }
 }
+
+// @media(max-width: 810px){
+//     .hero-section__left-block{
+//         padding: 2em !important;
+//     }
+// }
+
+@media(max-width: 870px){
+
+    html{
+        font-size:17px;
+    }
+
+    .hero-section{
+        flex-direction: column-reverse !important;
+
+        div.flex-row, div.flex-col{
+            width: 100%;
+            margin-top:1em;
+            border-radius:0em;
+
+            h1{
+                font-size:20vw;
+            }
+        }
+
+        .hero-section__left-block{
+            padding:1em;
+        }
+
+        img.hero-section__img{
+            max-width:70%;
+        }
+    }
+    
+}
+
 
 
