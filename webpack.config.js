@@ -12,7 +12,8 @@ const stylesHandler = isProduction
   : "style-loader";
 
 const config = {
-  entry: "./_dev/js/index.ts",
+  
+  entry: ['jquery', "./_dev/js/index.ts"],
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, "src"),

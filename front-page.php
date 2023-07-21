@@ -5,11 +5,15 @@
 
 
 <div class="full-page">
+
+    <button class="top-nav__switcher" data-hamburger-color="black" aria-controls="main-nav" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+    </button>
     
     <nav class="top-nav flex-row flex-between w-100">
         <img class="top-nav__logo" src="<?php echo get_template_directory_uri(); ?>/src/images/logo-green.png" alt="fumoco logo" width="400">
 
-        <ul role="list" class="top-nav__list flow-row color-black">
+        <ul role="list" id="main-nav" class="top-nav__list flex-row color-black" aria-expanded="false">
             <a href="#"><li class="top-nav__li green-underline">O nas</li></a>
             <a href="#"><li class="top-nav__li green-underline">Oferta</li></a>
             <a href="#"><li class="top-nav__li green-underline">Praca</li></a>

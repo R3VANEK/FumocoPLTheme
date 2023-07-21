@@ -1,0 +1,36 @@
+/*
+=============================================
+    CUBE CSS: Exceptions
+=============================================
+*/
+
+*[data-hamburger-color="white"]{
+    background: url("../img/hamburger-white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+*[data-hamburger-color="black"]{
+    background: url("../img/hamburger-black.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 1050px){
+    .top-nav__switcher[aria-expanded="true"]{
+        transform: rotate(90deg);
+    }
+    .top-nav__switcher[aria-expanded="false"]{
+        transform: rotate(0deg);
+    }
+    
+    .top-nav__list[aria-expanded="false"]{
+        transform: translateX(100%);
+    }
+    
+    .top-nav__list[aria-expanded="true"]{
+        transform: translateX(0%);
+    }
+}

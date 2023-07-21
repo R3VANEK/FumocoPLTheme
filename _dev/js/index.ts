@@ -1,6 +1,5 @@
-import 'jquery'
 import "../css/theme.scss";
-
+import './menu'
 interface test{
     color:string,
     numbero:number
