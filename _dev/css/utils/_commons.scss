@@ -40,6 +40,12 @@ h1,h2,h3,h4{
     .color-#{$key}{
         color: $val;
     }
+
+    .color-all-#{$key}{
+        *{
+            color: $val;
+        }
+    }
 }
 
 @each $key, $val in $paddings{
@@ -56,12 +62,17 @@ h1,h2,h3,h4{
 .text-align-left{
     text-align: start;
 }
-.text-align-left{
+.text-align-right{
     text-align: end;
+}
+.text-align-center{
+    text-align: center;
 }
 .bg-green{
     background-color: $green-primary;
 }
+
+
 
 .green-underline{
     position: relative;
