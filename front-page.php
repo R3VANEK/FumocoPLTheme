@@ -14,10 +14,10 @@
     <img class="top-nav__logo" src="<?php echo get_template_directory_uri(); ?>/src/images/logo-green.png" alt="fumoco logo" width="400">
 
     <ul role="list" id="main-nav" class="top-nav__list flex-row color-black" aria-expanded="false">
-        <a href="#"><li class="top-nav__li green-underline underline-hover"><?php _e('O nas')?></li></a>
-        <a href="#"><li class="top-nav__li green-underline underline-hover"><?php _e('Oferta')?></li></a>
-        <a href="#"><li class="top-nav__li green-underline underline-hover"><?php _e('Praca')?></li></a>
-        <a href="#"><li class="top-nav__li green-underline underline-hover"><?php _e('Kontakt')?></li></a>
+        <a href="#about-section"><li class="top-nav__li green-underline underline-hover"><?php _e('O nas')?></li></a>
+        <a href="#offer-section"><li class="top-nav__li green-underline underline-hover"><?php _e('Oferta')?></li></a>
+        <a href="#work-section"><li class="top-nav__li green-underline underline-hover"><?php _e('Praca')?></li></a>
+        <a href="#contact-section"><li class="top-nav__li green-underline underline-hover"><?php _e('Kontakt')?></li></a>
     </ul>
 </nav>
 
@@ -2413,56 +2413,70 @@
  
 
 
-<section class="about-section">
+<section class="about-section" id="about-section">
     <div class="about-section__grey-h flex-col bg-black-100 w-100 text-align-center">
-        <h2>O nas</h2>
+        <h2 data-aos="zoom-out">O nas</h2>
 
         <div class="about-section__advantage-h flex-row flex-center">
 
+
+         <div class="aos-container" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
             <div class="about-section__advantage-box flex-col text-align-left bg-green p-2 color-all-white">
                 <span>01.</span>
                 <h4>Oszczędność</h4>
                 <p>lorem ispum sid dolor qui amed</p>
                 <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
             </div>
+         </div>
+
+         <div class="aos-container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600">
             <div class="about-section__advantage-box flex-col text-align-left bg-black-200 p-2 color-all-white">
-                <span>02.</span>
-                <h4>Profesjonalizm</h4>
-                <p>lorem ispum sid dolor qui amed</p>
-                <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
-            </div>
+               <span>02.</span>
+               <h4>Profesjonalizm</h4>
+               <p>lorem ispum sid dolor qui amed</p>
+               <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
+           </div>
+         </div>
+
+         
+         <div class="aos-container" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="600">
             <div class="about-section__advantage-box flex-col text-align-left bg-black-300 p-2 color-all-white">
-                <span>03.</span>
-                <h4>Jakość usług</h4>
-                <p>lorem ispum sid dolor qui amed</p>
-                <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
-            </div>
+               <span>03.</span>
+               <h4>Jakość usług</h4>
+               <p>lorem ispum sid dolor qui amed</p>
+               <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
+           </div>
+         </div>
+
+         <div class="aos-container" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="600">
             <div class="about-section__advantage-box flex-col text-align-left bg-black-400 p-2 color-all-white">
-                <span>04.</span>
-                <h4>Elastyczność</h4>
-                <p>lorem ispum sid dolor qui amed</p>
-                <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
-            </div>
+               <span>04.</span>
+               <h4>Elastyczność</h4>
+               <p>lorem ispum sid dolor qui amed</p>
+               <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
+           </div>
+         </div>
+
         </div>
     </div>
 
-    <p class="about-section__long-text text-align-center p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis illo ipsum sit blanditiis modi est error ad ratione, inventore maxime ullam. Eligendi excepturi nesciunt impedit ipsum reiciendis, quod laboriosam?</p>
+    <p class="about-section__long-text text-align-center p-5" data-aos="fade-up" data-aos-offset="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis illo ipsum sit blanditiis modi est error ad ratione, inventore maxime ullam. Eligendi excepturi nesciunt impedit ipsum reiciendis, quod laboriosam?</p>
 </section>
 
 
-<section class="offer-section flex-row bg-green">
+<section class="offer-section flex-row bg-green" id="offer-section">
     <div class="offer-section__left-h flex-row flex-center w-50">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/images/connections.png" alt="fumoco connections" width="650">
+        <img data-aos="fade-right" data-aos-offset="400" src="<?php echo get_template_directory_uri(); ?>/src/images/connections.png" alt="fumoco connections" width="650">
     </div>
 
     <div class="offer-section__right-h flex-col text-align-right p-6 color-all-white">
-        <h3>Oferta</h3>
+        <h3 data-aos="zoom-out" data-aos-offset="400">Oferta</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum magni repellendus sequi ipsam? Hic quas enim illo. Numquam et corrupti, perferendis dolore possimus doloremque eius iusto, enim, aspernatur officiis culpa!</p>
     </div>
 </section>
 
-<section class="work-section flex-col w-100 text-align-center">
-    <h3 class="color-black">Praca</h3>
+<section class="work-section flex-col w-100 text-align-center" id="work-section">
+    <h3 class="color-black" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Praca</h3>
 
     <div class="work-section__card-h flex-row w-100">
 

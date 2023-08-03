@@ -1,4 +1,4 @@
-    <footer class="main-footer flex-row flex-between w-100 bg-black color-all-white">
+    <footer class="main-footer flex-row flex-between w-100 bg-black color-all-white" id="contact-section">
         <div class="main-footer__left-h flex-col text-align-left w-50 p-4">
             <h3 class="green-underline">Skontaktuj się już dziś.</h3>
             <div class="contact-row flex-row flex-center">

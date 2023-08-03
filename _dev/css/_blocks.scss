@@ -70,7 +70,7 @@
         right:2rem;
         z-index:99;
         aspect-ratio:  1/1;
-        width:3em;
+        width:2em;
         outline:none;
         border:0;
         cursor: pointer;
@@ -125,6 +125,13 @@
         font-size:17px;
     }
 
+    svg#site-main-gif{
+        height:10%;
+    }
+
+    .about-section__long-text{
+        padding:2em !important;
+    }
     .hero-section{
         flex-direction: column-reverse !important;
 
@@ -210,6 +217,10 @@
             height:initial;
             padding-top: 1em;
             padding-bottom: 1em;
+
+            &:last-child{
+                margin-right: 0em;
+            }
         }
     }
     
@@ -217,6 +228,7 @@
 
 
 .about-section__grey-h{
+    overflow: hidden;
     margin-top:3em;
     h2{
         font-size:4rem;
@@ -224,7 +236,6 @@
     }
 
     .about-section__advantage-box{
-        transform:translateY(20%);
         position: relative;
         overflow: hidden;
         padding-bottom: 5em;
