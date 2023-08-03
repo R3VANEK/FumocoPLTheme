@@ -193,6 +193,25 @@
     .offer-section__right-h{
         padding:2em !important;
     }
+
+    div.work-section__card-h{
+        padding-bottom:1em;
+        overflow: hidden;
+        padding:0 !important;
+        align-items: center !important;
+        flex-direction: column !important;
+
+        .work-section__bg-card{
+            display: none;
+        }
+
+        div.work-card{
+            max-width: 90%;
+            height:initial;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+    }
     
 }
 
@@ -260,6 +279,86 @@
         font-size:1.5rem;
     }
     
+}
+.work-section{
+
+    h3{
+        font-size:4rem;
+        margin-top:2em;
+        margin-bottom:1em;
+    }
+
+    .work-section__bg-card{
+        position: absolute;
+        display: inline-block;
+        height:75%;
+        width: inherit;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        top:25%;
+    }
+}
+.work-section__card-h{
+    
+    padding-top:2em;
+    padding-bottom:2em;
+    gap:1em;
+    margin-bottom:4em;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    position: relative;
+    z-index: 1;
+    
+  
+    .work-card{
+        height:600px;
+        z-index:2;
+        justify-content: space-around;
+
+        button{
+            align-self: center;
+        }
+    }
+
+    .work-card:first-child{
+        margin-left:1em;
+    }
+    .work-card:last-child{
+        margin-right:1em;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    
+}
+.work-card{
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width:30%;
+    p{
+        color:white;
+        padding:2em;
+        font-size: 1.4rem;
+    }
+    h4{
+        font-size:3rem;
+    }
 }
 
 .main-footer__left-h{

@@ -1,0 +1,197 @@
+@keyframes levitate {
+    from {
+        transform: translateY(0%)
+    }
+
+    to {
+        transform: translateY(-3%)
+    }
+}
+
+@keyframes levitate-paper {
+    from {
+        transform: translateY(0%)
+    }
+
+    to {
+        transform: translateY(-2%)
+    }
+}
+
+@keyframes levitate-text-skew {
+    from {
+        transform: skewY(30.8283deg) translateY(0%)
+    }
+
+    to {
+        transform: skewY(30.8283deg) translateY(-3%)
+    }
+}
+
+@keyframes glow-tree {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bump-heart {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes yes-head {
+    from {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(-2px) rotate(10deg);
+    }
+}
+
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
+@keyframes click {
+    to {
+        transform: translateY(0.5px);
+    }
+}
+
+
+
+svg#site-main-gif{
+
+    #svg-fumoco-logo, #svg-fumoco-logo-back{
+        animation-duration: 5s;
+        animation-name: levitate;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    
+    #svg-fumoco-text{
+        animation-duration: 5s;
+        animation-name: levitate-text-skew;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+    }
+    ellipse#tree-glow{
+        animation-duration: 2s;
+        animation-name: glow-tree;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    #paper-1 > *, #paper-2 > *, #paper-3 > *{
+        animation-duration: 2s;
+        animation-delay: 0.1s;
+        animation-name: levitate-paper;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    #paper-1 > .paper-text-line, #paper-1-card{
+        animation-delay: 0.1s;
+    }
+    
+    #paper-2 > .paper-text-line, #paper-2-card{
+        animation-delay: 0.5s;
+    }
+    
+    #paper-3 > .paper-text-line, #paper-3-card{
+        animation-delay: 0.9s;
+    }
+    path#heart-top{
+        transform-origin: initial;
+        animation-duration: 0.5s;
+        animation-delay: 0.1s;
+        animation-name: bump-heart;
+        animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    #screen-bottom, #screen-right, #screen-top, #screen-left{
+        animation-duration: 1s;
+        animation-name: glow-tree;
+        animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    #screen-top, #screen-bottom{
+        animation-delay: 0.2s;
+    }
+    #screen-bottom{
+        animation-delay: 0.1s;
+    }
+    
+    path.track{
+        stroke-dasharray: 80 !important;
+        animation: dash 10s linear;
+        stroke:#8ff872 !important;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        /* animation-duration: 2s;
+        animation-delay: 0.1s;
+        animation-name: light-track;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; */
+    }
+    
+    ellipse#dash-circle-1{
+        stroke:#8ff872 !important;
+        animation-duration: 0.5s;
+        animation-name: glow-tree;
+        animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    .head{
+        transform-box:fill-box;
+        animation-duration: 1s;
+        animation-name: yes-head;
+        animation-timing-function:linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    #head-2{
+        animation-delay: 0.4s;
+    }
+    
+    #head-3{
+        animation-delay: 0.7s;
+    }
+    
+    #company-logo-front{
+        transform: translateY(-0.5px);
+        transform-box:fill-box;
+        animation-duration: 1s;
+        animation-name: click;
+        animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+
+

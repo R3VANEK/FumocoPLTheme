@@ -28,3 +28,9 @@
 .flow-row > * + *{
     margin-left: 1em;
 }
+
+.float-row{
+    & > *{
+        float:left;
+    }
+}
