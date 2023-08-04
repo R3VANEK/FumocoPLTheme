@@ -2500,7 +2500,9 @@
                         <div class='work-card flex-col bg-green'>
                             <h4>$title</h4>
                             <p>$desc</p>
-                            <button class='button'>Wyślij CV</button>
+                            <a href='mailto:jan.napieralski.torun@wp.pl'>
+                              <button class='button'>Wyślij CV</button>
+                            </a>
                         </div>
                     ";
 
