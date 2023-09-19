@@ -23,11 +23,25 @@
 
 <section class="hero-section flex-row w-100">
 
-    <div class="hero-section__left-block flex-col p-4 w-50 bg-green">
-        <span class="hero-section__note">Outsourcing company</span>
+    <div class="hero-section__left-block flex-col p-4 w-50 bg-green-100">
+        <span class="hero-section__note">firma outsourcingowa</span>
         <h1>Fumoco</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima officiis tenetur similique alias sed sequi laborum, eligendi fuga repellat eum inventore deleniti atque exercitationem odit quos adipisci perferendis. Reiciendis, aspernatur?</p>
-        <button class="button">Zobacz więcej</button>
+        <p>
+         <?php
+
+            _e("Fumoco Poland sp. z.o.o. jest polską firmą outsourcingową, zajmującą się przekazywaniem zadań, funkcji, projektów i procesów do realizacji.
+            Outsourcing w spółce Fumoco Poland jest wykorzystywany w wielu obszarach gospodarki. Nasza firma wykorzystując procesy outsourcingowe
+            koncentruje działania zarządcze na głównych celach i kluczowych kompetencjach organizacji. Zwiększamy dzięki temu ponadto elastyczność
+            struktury przedsiębiorstwa, czyli jej szybkość, skuteczność i efektywność pod względem zmian rynkowych", "fumoco-pl-theme")
+         
+         ?>
+        
+        </p>
+
+        <a href="#aboutLink">
+           <button class="button">Zobacz więcej</button>
+        </a>
+
     </div>
 
     <div class="hero-section__block flex-row flex-center w-50 ">
@@ -2413,46 +2427,42 @@
  
 
 
-<section class="about-section" id="about-section">
+<section class="about-section flex flex-col" id="about-section">
     <div class="about-section__grey-h flex-col bg-black-100 w-100 text-align-center">
-        <h2 data-aos="zoom-out">O nas</h2>
+        <h2 data-aos="zoom-out" id="aboutLink">O nas</h2>
 
         <div class="about-section__advantage-h flex-row flex-center">
 
 
          <div class="aos-container" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-            <div class="about-section__advantage-box flex-col text-align-left bg-green p-2 color-all-white">
+            <div class="about-section__advantage-box flex-col text-align-left bg-green-100 p-2 color-all-white">
                 <span>01.</span>
-                <h4>Oszczędność</h4>
-                <p>lorem ispum sid dolor qui amed</p>
+                <h4>Profesjonalizm</h4>
                 <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
             </div>
          </div>
 
          <div class="aos-container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600">
-            <div class="about-section__advantage-box flex-col text-align-left bg-black-200 p-2 color-all-white">
+            <div class="about-section__advantage-box flex-col text-align-left bg-green-200 p-2 color-all-white">
                <span>02.</span>
-               <h4>Profesjonalizm</h4>
-               <p>lorem ispum sid dolor qui amed</p>
+               <h4>Jakość usług</h4>
                <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
            </div>
          </div>
 
          
          <div class="aos-container" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="600">
-            <div class="about-section__advantage-box flex-col text-align-left bg-black-300 p-2 color-all-white">
+            <div class="about-section__advantage-box flex-col text-align-left bg-green-300 p-2 color-all-white">
                <span>03.</span>
-               <h4>Jakość usług</h4>
-               <p>lorem ispum sid dolor qui amed</p>
+               <h4>Elastyczność</h4>
                <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
            </div>
          </div>
 
-         <div class="aos-container" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="600">
-            <div class="about-section__advantage-box flex-col text-align-left bg-black-400 p-2 color-all-white">
+         <div class="aos-container" data-aos="fade-right" data-aos-offset="450" data-aos-easing="ease-in-sine" data-aos-duration="600">
+            <div class="about-section__advantage-box flex-col text-align-left bg-green-400 p-2 color-all-white">
                <span>04.</span>
-               <h4>Elastyczność</h4>
-               <p>lorem ispum sid dolor qui amed</p>
+               <h4>Oszczędność</h4>
                <img class="advantage-box__check-icon" width="100" src="<?php echo get_template_directory_uri();?>/src/images/check.png" alt="check icon">
            </div>
          </div>
@@ -2460,18 +2470,39 @@
         </div>
     </div>
 
-    <p class="about-section__long-text text-align-center p-5" data-aos="fade-up" data-aos-offset="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis illo ipsum sit blanditiis modi est error ad ratione, inventore maxime ullam. Eligendi excepturi nesciunt impedit ipsum reiciendis, quod laboriosam?</p>
+
+    <video 
+    id="test"
+      controls 
+      controlslist="nodownload noplaybackrate"
+      disablepictureinpicture
+      poster="<?php echo get_template_directory_uri();?>/src/images/video-poster.png"
+      class="about-section__video text-align-center w-75 p-7" 
+      data-aos="fade-up"
+      data-aos-once="true"
+      >
+      <source src="<?php echo get_template_directory_uri();?>/src/fumoco.mp4"/>
+    </video>
+
+
+    
 </section>
 
 
-<section class="offer-section flex-row bg-green" id="offer-section">
+<section class="offer-section flex-row bg-green-100" id="offer-section">
     <div class="offer-section__left-h flex-row flex-center w-50">
         <img data-aos="fade-right" data-aos-offset="400" src="<?php echo get_template_directory_uri(); ?>/src/images/connections.png" alt="fumoco connections" width="650">
     </div>
 
     <div class="offer-section__right-h flex-col text-align-right p-6 color-all-white">
         <h3 data-aos="zoom-out" data-aos-offset="400">Oferta</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum magni repellendus sequi ipsam? Hic quas enim illo. Numquam et corrupti, perferendis dolore possimus doloremque eius iusto, enim, aspernatur officiis culpa!</p>
+        <p>
+         <?php
+            _e("Korzystając z usług Fumoco, klient zapewnia sobie gwarancję wysokiego poziomu wykonania usług, dostęp do specjalistycznej wiedzy i umiejętności wykwalifikowanych pracowników oraz pełne bezpieczeństwo wykonania usługi.
+            Skontaktuj się z nami żeby zapoznać się z pełnym wachlarzem naszych usług i przekonaj się jak możemy pomóc właśnie Tobie", "fumoco-pl-theme")
+         ?> 
+
+        </p>
     </div>
 </section>
 
@@ -2495,12 +2526,17 @@
 
                     $title = get_field('tytul', $work_offer->ID);
                     $desc = get_field('krotki_opis', $work_offer->ID);
+                    $img = get_field('ikonka_ludzika', $work_offer->ID)["url"];
+
+                  //   echo var_dump($img);
 
                     echo "
-                        <div class='work-card flex-col bg-green'>
+                        <div class='work-card flex-col bg-green-100'>
+                           <img src='$img' alt='ikonka $title'/>
                             <h4>$title</h4>
+                            
                             <p>$desc</p>
-                            <a href='mailto:jan.napieralski.torun@wp.pl'>
+                            <a href='mailto:info@fumoco.pl'>
                               <button class='button'>Wyślij CV</button>
                             </a>
                         </div>

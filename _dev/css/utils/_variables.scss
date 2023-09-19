@@ -1,25 +1,28 @@
-$green-primary: #78D655;
+$green-primary: #78d655;
 $black-100: #595959;
 $black-200: #484848;
 $black-300: #323232;
 $black-400: #282828;
 
 $colors: (
-    "green": #78D655,
-    "black-100": #595959,
-    "black-200": #484848,
-    "black-300": #323232,
-    "black-400": #282828,
-    "black": black,
-    "white": white
+  "green-100": #78d655,
+  "green-200": #68bb4a,
+  "green-300": #5ba640,
+  "green-400": #4c8a35,
+  "black-100": #595959,
+  "black-200": #484848,
+  "black-300": #323232,
+  "black-400": #282828,
+  "black": black,
+  "white": white,
 );
 
 $paddings: (
-    "1": 1em,
-    "2": 2em,
-    "3": 3em,
-    "4": 4em,
-    "5": 5em,
-    "6": 6em,
-    "7": 7em,
-)
+  "1": 1em,
+  "2": 2em,
+  "3": 3em,
+  "4": 4em,
+  "5": 5em,
+  "6": 6em,
+  "7": 7em,
+);

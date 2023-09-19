@@ -14,10 +14,10 @@ $('button.top-nav__switcher').on("click", function(){
     else{
         $(this).attr("data-hamburger-color", "white")
     }
-})
+});
 
 $("#main-nav li").on("click", function(){
-
+    
     const hamburgerElement = $("button.top-nav__switcher").eq(0);
     const hamburgerVisible:boolean = hamburgerElement.attr("aria-expanded") === "true";
     
@@ -27,4 +27,4 @@ $("#main-nav li").on("click", function(){
         hamburgerElement.attr("data-hamburger-color", "black")
     }
 
-})
+});
